@@ -17,7 +17,7 @@
 <!--        角色内容表格区域-->
         <el-table :data="rolesList" border stripe>
 <!--          展开列-->
-          <el-table-column type="expand" label="#">
+          <el-table-column type="expand">
             <template slot-scope="scope">
 <!--              渲染一级权限-->
               <el-row :class="['vcenter','bdbottom', index1 == 0? 'bdtop':'']" :key="item1.id" v-for="(item1, index1) in scope.row.children">
